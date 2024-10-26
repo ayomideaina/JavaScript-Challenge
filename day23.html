@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100px;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #27ae60;
+        }
+    
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 60px);
+            gap: 5px;
+            margin-top: 20px;
+        }
+        /* 
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            gap:5px;
+            margin-top: 20px;
+        }
+        */
+        .number {
+            width: 60px;
+            height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: white;
+            border-radius: 2px;
+        }
+        input{
+            border: 1px solid #27ae60;
+        }
+        input, button {
+            padding: 7px;
+            margin: 10px 10px;
+            font-size: 18px;
+        }
+        button {
+            background-color: #27ae60;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #2ecc71;
+        }
+
+        .message {
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+        .key-code {
+            font-size: 30px;
+            color: #27ae60;
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: white;
+            box-shadow: 0 2px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Number Generator</h1>
+    <label for >
+    <input type="number" id ='userInput' placeholder="Enter any number"/>
+    
+    <button onclick="generateNumbers()">Generate numbers </button>
+    
+    <div class="container" id="numberContainer"></div>
+
+    <h1>Press any keyboard key</h1>
+    <div class="message">You pressed <span id="key"></span></div>
+    <div class="key-code" id="keyCode"></div>
+
+
+    <script src ="day23.js"></script>
+</body>
+</html>

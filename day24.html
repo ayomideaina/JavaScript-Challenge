@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Planet Weight Calculator</title>
+        <style>
+            body {
+                background-image: url('https://www.solarsystemscope.com/textures/download/2k_stars_milky_way.jpg');
+                background-size: cover;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+                color: white;
+                padding: 20px;
+            }
+
+            input, select, button {
+                padding: 7px;
+                margin: 10px;
+                border-radius: 5px;
+            }
+
+            button {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+            }
+            button:hover{
+                background-color: #89f38e;
+            }
+
+            #result {
+                margin-top: 20px;
+                padding: 20px;
+                font-size: 15px;
+                background-color: rgba(214, 207, 207, 0.144);
+                height: 50vh;
+            }
+
+            h1 {
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <h1>Calculate the Weight of an Object on a Planet</h1>
+        <div>
+            <input type="number" id="mass" placeholder="Mass in Kilogram" />
+            <select id="planet">
+                <option value="">Select planet</option>
+                <option value="earth">Earth</option>
+                <option value="mars">Mars</option>
+                <option value="jupiter">Jupiter</option>
+                <option value="moon">Moon</option>
+                <option value="venus">Venus</option>
+                <option value="saturn">Saturn</option>
+                <option value="neptune">Neptune</option>
+                <option value="mercury">Mercury</option>
+                <option value="uranus">Uranus</option>
+            </select>
+            <button onclick="calculateWeight()">Calculate weight</button>
+        </div>
+        
+        <p id="result"></p>
+        <script src="day24.js"></script>
+
+    </body>
+</html>

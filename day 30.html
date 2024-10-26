@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 30</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            width: 40%;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px 50px 20px 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: black;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #e67e00;
+        }
+
+        .error-message {
+            color: red;
+            font-size: 12px;
+            display: none;
+        }
+
+        input.error {
+            border-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Validating Web Forms</h1>
+        <form id="validationForm">
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="telephone">Telephone</label>
+                <input type="text" id="telephone" name="telephone">
+                <small class="error-message"></small>
+            </div>
+
+            <div class="form-group">
+                <label for="bio">Your Bio</label>
+                <input type="text" id="bio" name="bio">
+                <small class="error-message"></small>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="day 30.js"></script>
+</body>
+</html>

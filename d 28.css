@@ -1,0 +1,64 @@
+#leaderboard {
+    margin: 0 auto;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  form input {
+    margin:10px;
+    padding: 10px;
+    border: 1px solid #ee8989;
+    border-radius: 5px;
+  }
+
+  form button {
+    padding: 10px 20px;
+    background-color:#ee8989;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #leaderboardList {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin:0 30px 20px;
+  }
+  
+  .playerCard {
+    background-color: #f7aaaa;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .playerInfo {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .scoreControls {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .scoreButton {
+    background-color:white;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  

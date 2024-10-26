@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f9f9f9;
+    margin: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 20px 0;
+    color: #ff8c00;
+}
+
+input {
+    padding: 10px;
+    width: 40%;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn-group button, .searchBtn {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-group button:hover {
+    background-color: #e67e00;
+}
+
+#countries-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.country-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(59, 37, 37, 0.1);
+    text-align: left;
+}
+
+.country-card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.country-info {
+    margin-top: 10px;
+}
+
+.country-info p {
+    margin: 5px 0;
+}
